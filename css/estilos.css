@@ -1,8 +1,8 @@
 header{
     background-color: #5b7989;
     overflow: hidden;
-    background-color: #eee;
     padding: 20px 10px;
+    border-radius: 10px 10px 0 0;
 }
 
 header h1{
@@ -11,7 +11,12 @@ header h1{
     display:inline;
 }
 
+.container-1{
+    background-color: #82c3a6;
+}
+
 .container-1 img{
+    margin: 5%;
     width: 90%;
     display: block;
     margin-left: auto;
@@ -19,26 +24,81 @@ header h1{
 }
 
 .container-2 img{
-    width: 30%;
+    width: 80%;
+    height: auto;
+    border: #000000 solid;
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
 }
 
-.container-2 div{
-    display: flex;
-    flex-direction: row;
+.flex-rigth img:hover{
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -webkit-box-shadow: 0 2px 2px #82c3a6;
+    -moz-box-shadow: 0 2px 2px #82c3a6;
+    box-shadow: 0 2px 2px #82c3a6;
 }
 
+.flex-left img:hover{
+    transform:translate(5px,20px);
+    -webkit-transform: translate(20px,-5px);
+    -webkit-box-shadow: 0 2px 2px #82c3a6;
+    -moz-box-shadow: 0 2px 2px #82c3a6;
+    box-shadow: 0 2px 2px #82c3a6;
+}
+
+section > div > img{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-2{
+    background-color: #d5c75f;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+div.flex-left:hover{
+
+}
+
+div.flex-rigth:hover{
+
+}
+
+#bloque1{
+    padding: 1px;
+}
 /* 
   ##Device = Desktop
   ##Screen = 1025px o mas resoluciones
 */
 
-@media (min-width: 1025px) {
+@media (min-width: 701px) {
     header div{
         float: right;
     }
+    
+    .container-2{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .flex-left{
+        width: 40%;
+        height: auto;
+    }
+
+    .flex-rigth{
+        width: 40%;
+        height: auto;
+    }
 }
   
-@media (min-width: 320px) and (max-width: 1024px) {
+@media (min-width: 320px) and (max-width: 700px) {
     header div{
         float: none;
     }
