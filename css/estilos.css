@@ -1,8 +1,19 @@
+img{
+    -webkit-box-shadow: 0 3px 3px #02010a;
+    -moz-box-shadow: 0 3px 3px #02010a;
+    box-shadow: 0 3px 3px #02010a;
+}
+
 header{
     background-color: #5b7989;
     overflow: hidden;
     padding: 20px 10px;
     border-radius: 10px 10px 0 0;
+}
+
+* {
+    font-family: 'Dancing Script', cursive;
+    font-size: 16px;
 }
 
 header h1{
@@ -61,17 +72,38 @@ section > div > img{
     padding-bottom: 3%;
 }
 
-div.flex-left:hover{
-
-}
-
-div.flex-rigth:hover{
-
-}
-
 #bloque1{
     padding: 1px;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+/*FOOTER*/
+
+footer{
+    font-family: 'Sofia';
+    font-size: 16px;
+    border-radius: 0 0 10px 10px;
+    background-color: #C6d5c5;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+footer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* 
   ##Device = Desktop
   ##Screen = 1025px o mas resoluciones
