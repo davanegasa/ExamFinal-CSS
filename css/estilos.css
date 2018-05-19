@@ -186,3 +186,24 @@ Paisajes cajas de 3 columnas
         align-content: center;
     }
 }
+
+header {
+    -webkit-animation-name: rebote; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: rebote;
+    animation-duration: 2s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes rebote {
+    0% {margin-top:150%;}
+    60% {margin-top: -5%;}
+    100% {margin-top: 0%;}
+}
+
+/* Standard syntax */
+@keyframes rebote {
+    0% {margin-top:150%;}
+    60% {margin-top: -5%;}
+    100% {margin-top: 0%;}
+}
