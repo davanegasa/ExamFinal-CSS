@@ -152,6 +152,11 @@ Paisajes cajas de 3 columnas
     header div{
         float: right;
     }
+
+    #nav-der{
+        display:table-cell;
+        vertical-align:middle
+    }
     
     .container-2{
         display: flex;
